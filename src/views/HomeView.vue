@@ -12,7 +12,7 @@ onMounted(() => {
 
 <template>
   <main>
-    <h1>Home</h1>
+   
     <div v-if="error">{{ error }}</div>
     <div v-else-if="posts.length">
       <PostList :posts="posts" />

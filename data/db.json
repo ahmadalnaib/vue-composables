@@ -3,13 +3,13 @@
     {
       "id": 1,
       "title": "Hello World",
-      "content": "This is my first post!",
+      "body": "This is my first post!",
       "tags": ["hello", "world"]
     },
     {
       "id": 2,
       "title": "Hello Again",
-      "content": "This is my second post!",
+      "body": "This is my second post!",
       "tags": ["hello", "again"]
     }
   ]

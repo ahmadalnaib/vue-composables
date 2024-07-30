@@ -1,5 +1,6 @@
 <script setup>
-import { ref,defineProps } from 'vue';
+import { defineProps } from 'vue';
+import SinglePost from '@/components/posts/SinglePost.vue';
 
 const props = defineProps({
   posts: {
@@ -7,18 +8,13 @@ const props = defineProps({
     required: true,
   },
 });
-
 </script>
 
 <template>
-  <section>
-    <h2>Posts</h2>
-    <ul>
-      <li v-for="post in props.posts" :key="post.id">
-        <h3>{{ post.title }}</h3>
-        <p>{{ post.body }}</p>
-      </li>
-    </ul>
+  <h2 class="text-2xl font-bold m-10"> Last Posts</h2>
+  <section class="p-6 bg-gray-100 rounded-lg shadow-md">
+    <div v-for="post in props.posts" :key="post.id">
+      <SinglePost :post="post" />
+    </div>
   </section>
-  
 </template>
